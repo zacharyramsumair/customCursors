@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	height: 75dvh;
+	width: 80%;
+	background-color: #e6e8e6;
+	position: relative;
+}
+
+#circle,
+#cube,
+#square,
+#triangle {
+	/* width: 5em; */
+	width: 5em;
+	position: absolute;
+	/* height:; */
+}
+
+#circle > path,
+#cube > path,
+#triangle > path {
+	stroke-width: 2px;
+}
+
+#circle {
+	top: 1em;
+	left: 1em;
+	fill: #71b0d1;
+}
+
+#cube {
+	bottom: 20%;
+	right: 20%;
+	fill: green;
+}
+#square {
+	top: 27%;
+	right: 7%;
+	fill: purple;
+}
+#triangle {
+	bottom: 40%;
+	left: 25%;
+	fill: hotpink;
+}
