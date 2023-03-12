@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
@@ -54,4 +55,35 @@ main {
 	bottom: 40%;
 	left: 25%;
 	fill: hotpink;
+}
+
+.cursor {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border: 3px solid #000;
+	transition: 0.1s;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.big {
+	width: 5em;
+	height: 5em;
+	background-color: #ecaa30;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Text {
+	font-size: 1.3rem;
+	border-radius: 50%;
+	z-index: 999;
+}
+
+.appear {
+	display: none;
 }
